@@ -1,39 +1,57 @@
-Analisis Data Bike Sharing
+# Dicoding Collection Dashboard
 
-Setup Environment - Anaconda
+## Deskripsi Proyek
+Proyek ini merupakan dashboard interaktif berbasis Streamlit yang digunakan untuk menganalisis data peminjaman sepeda dari dataset Bike Sharing. Dashboard ini menyediakan berbagai visualisasi untuk memahami pola penggunaan sepeda berdasarkan faktor-faktor seperti cuaca, musim, dan waktu.
 
-Untuk menyiapkan lingkungan menggunakan Anaconda, jalankan perintah berikut:
-
+## Setup Environment
+### Menggunakan Anaconda
+```bash
 conda create --name main-ds python=3.9
 conda activate main-ds
 pip install -r requirements.txt
+```
 
-Setup Environment - Shell/Terminal
-
-Jika menggunakan pipenv, jalankan perintah berikut:
-
+### Menggunakan Shell/Terminal
+```bash
 mkdir proyek_analisis_data
 cd proyek_analisis_data
 pipenv install
 pipenv shell
 pip install -r requirements.txt
+```
 
-Jalankan Aplikasi Streamlit
-
-Setelah lingkungan telah dikonfigurasi, jalankan aplikasi Streamlit dengan perintah berikut:
-
+## Menjalankan Aplikasi Streamlit
+Untuk menjalankan aplikasi, gunakan perintah berikut:
+```bash
 streamlit run datavisualisasi.py
+```
 
-Tampilan Dashboard
+## Dataset
+Proyek ini menggunakan dataset dari **Bike Sharing Dataset** yang terdiri dari dua file utama:
+1. `day.csv` - Data peminjaman sepeda berdasarkan hari.
+2. `hour.csv` - Data peminjaman sepeda berdasarkan jam.
 
-Dashboard akan berjalan di browser dan menampilkan hasil analisis data peminjaman sepeda.
+## Fitur Dashboard
+- **Visualisasi Tren Peminjaman Sepeda**: Menampilkan tren jumlah peminjaman sepeda berdasarkan waktu.
+- **Analisis Faktor Cuaca**: Menunjukkan bagaimana cuaca mempengaruhi jumlah peminjaman.
+- **Distribusi Peminjaman Berdasarkan Musim**: Menunjukkan pola penggunaan sepeda di berbagai musim.
 
-Contoh Tampilan:
+## Contoh Visualisasi
+Tangkapan layar berikut menunjukkan contoh visualisasi dari dashboard:
+![Dashboard Preview]
+![image](https://github.com/user-attachments/assets/f832d01c-cd9f-43e4-8f6a-9c511fb0b353)
 
-![image](https://github.com/user-attachments/assets/ae934ab0-6ff1-403d-9741-6430f1d92b34)
 
-Dashboard ini menampilkan berbagai visualisasi seperti distribusi peminjaman sepeda, pengaruh cuaca, serta tren peminjaman berdasarkan waktu.
+## Catatan Tambahan
+- Pastikan semua dependensi telah diinstal sebelum menjalankan aplikasi.
+- Gunakan `streamlit run datavisualisasi.py` untuk menampilkan dashboard secara interaktif.
 
-Pastikan Anda memiliki dataset day.csv dan hour.csv dalam direktori proyek sebelum menjalankan aplikasi ini.
+## Kontributor
+- **[Nama Anda]** - Wiraldy Manggala Simanjuntak
 
-Selain itu, analisis data lebih lanjut dapat ditemukan dalam notebook Google Colab dengan nama file Proyek Analisis Data.ipynb.
+## Lisensi
+Proyek ini didistribusikan di bawah lisensi [MIT License](LICENSE).
+
+---
+Jika ada pertanyaan atau ingin berkontribusi, silakan hubungi saya! 🚀
+
